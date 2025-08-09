@@ -5,7 +5,7 @@
   align-items: center;
 }
 .top-header {
-  padding: 60px 20px 0 0;
+  padding: 2% 0 0 0;
 }
 .search-input {
   border-radius: 50px;
@@ -22,11 +22,12 @@
   transform: translateY(-50%);
   color: #999;
 }
-.right-icons span, .right-icons a {
+.right-icons span,
+.right-icons a {
   color: #84786a;
   font-size: 12px;
   text-decoration: none;
-font-weight: 600;
+  font-weight: 600;
 }
 .flag-icon {
   width: 24px;
@@ -36,15 +37,15 @@ font-weight: 600;
 .fa-search {
   padding-left: 20px;
 }
-.gitch{
-	font-size:10px !important;
+.gitch {
+  font-size: 10px !important;
 }
 .git-img {
-    width: 55%;
-    padding-top: 5px;
+  width: 55%;
+  padding-top: 5px;
 }
 .can-div {
-    padding-top: 8px;
+  padding-top: 8px;
 }
 /*Menu*/
 .custom-menu {
@@ -68,7 +69,7 @@ font-weight: 600;
   background-color: rgb(207 171 148);
   color: #fff !important;
   border-radius: 8px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 1rem;
@@ -118,7 +119,7 @@ font-weight: 600;
   max-height: 800px;
   object-fit: cover;
 }
-/**//* Section Header */
+/**/ /* Section Header */
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -129,14 +130,13 @@ font-weight: 600;
 }
 
 .section-header h2 {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-weight: bold;
-	color: #52595a;
-	 flex: 1;
+  color: #52595a;
+  flex: 1;
   text-align: center;
 }
 .product-info {
-  
 }
 
 .product-card:hover .product-info {
@@ -149,14 +149,14 @@ font-weight: 600;
 }
 
 .product-card:hover .product-info::after {
-  content: 'VIEW PRODUCT';
+  content: "VIEW PRODUCT";
   color: #fff;
   font-weight: 600;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   font-size: 14px;
-	cursor: pointer;
+  cursor: pointer;
 }
 
 /* Product Card */
@@ -187,7 +187,7 @@ font-weight: 600;
   height: 180px;
   object-fit: contain;
   margin-bottom: 20px;
-	filter: drop-shadow(-5px 10px 3px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(-5px 10px 3px rgba(0, 0, 0, 0.3));
 }
 
 /* Product Info */
@@ -277,15 +277,15 @@ font-weight: 600;
 }
 
 .question-title {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-size: 64px;
   font-weight: bold;
   color: #3f4647;
   margin: 0;
   line-height: 1;
   position: absolute;
-    top: -37px;
-    left: 25%;
+  top: -37px;
+  left: 25%;
   transform: translateX(-50%);
   z-index: 2;
 }
@@ -302,10 +302,10 @@ font-weight: 600;
   z-index: 1;
 }
 .question-box p {
-	text-align:left;
+  text-align: left;
 }
 .pt-10 {
-	padding-top: 6rem !important;
+  padding-top: 6rem !important;
 }
 .btn-contact {
   background-color: #f3f0ed;
@@ -363,7 +363,6 @@ font-weight: 600;
   font-size: 14px;
 }
 
-
 .popular-tags {
   display: flex;
   justify-content: center;
@@ -387,9 +386,9 @@ font-weight: 600;
   color: #525b60;
 }
 .search-button {
-    background-color: #17a2b8;
-    padding: 6px 10px;
-	border-radius: 25px;
+  background-color: #17a2b8;
+  padding: 6px 10px;
+  border-radius: 25px;
 }
 .brand-slider-section {
   background-color: #fff;
