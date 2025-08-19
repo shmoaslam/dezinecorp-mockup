@@ -1,12 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
+
 .logo {
   width: 280px;
   align-items: center;
 }
+
 .top-header {
   padding: 2% 0 0 0;
 }
+
 .search-input {
   border-radius: 50px;
   border: none;
@@ -15,6 +18,7 @@
   height: 30px;
   margin-left: 10px;
 }
+
 .search-icon {
   position: absolute;
   top: 50%;
@@ -22,6 +26,7 @@
   transform: translateY(-50%);
   color: #999;
 }
+
 .right-icons span,
 .right-icons a {
   color: #84786a;
@@ -29,116 +34,120 @@
   text-decoration: none;
   font-weight: 600;
 }
+
 .flag-icon {
   width: 40px;
   margin-left: 5px;
   vertical-align: middle;
 }
+
 .fa-search {
   padding-left: 20px;
 }
+
 .gitch {
   font-size: 10px !important;
 }
+
 .git-img {
   width: 55%;
   padding-top: 5px;
 }
+
 .can-div {
   padding-top: 8px;
 }
-/*Menu*/
+
+/* Menu */
 .navbar-container {
   max-width: 1170px;
   margin: 0 auto;
   padding-left: 0;
   padding-right: 0;
 }
-.nav-item{
-    margin: 0px 25px;
 
+.nav-item {
+  margin: 0 25px;
 }
+
 .custom-menu {
   background-color: #fff;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
+
 .custom-menu .nav-link {
   color: #333;
   padding: 5px 10px;
   position: relative;
   transition: all 0.3s ease;
 }
+
 .container {
-  max-width: 1170px; /* fixed max width */
-  margin: 0 auto;    /* center horizontally */
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
-.row {
-  width: 100%;
-}
-
-/*
-.custom-menu .nav-link:hover {
-  background-color: rgb(207 171 148);
-  color: #fff !important;
-  border-radius: 8px;
-}
-*/
 .hot-deals {
   background-color: rgb(207 171 148);
   color: #fff !important;
   border-radius: 8px;
   margin-bottom: 10px;
 }
+
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 1rem;
   padding-left: 1rem;
 }
-/*
-.custom-menu .nav-link.active, .custom-menu .nav-link:focus, .custom-menu .nav-link:visited {
-  border-bottom: 1px solid rgb(207 171 148);
-  color: #333;
-}
-*/
+
 .custom-menu .navbar-nav {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 @media (max-width: 767px) {
   .custom-menu .navbar-nav {
     flex-direction: column;
   }
 }
-/**/
+
+/* Hot Deals Banner */
 .hot-deals-banner {
-  background-color: #4b5457; /* Matches the dark grey background in the image */
-  padding: 10px 10px;
+  background-color: #4b5457;
+  padding: 10px;
 }
+
 .hot-deals-banner p {
   margin: 0;
   color: #fff;
   font-size: 1.4rem;
   font-weight: 400;
 }
+
 .hot-deals-banner strong {
   font-weight: 700;
 }
-@media (max-width: 768px) {
-  .hot-deals-banner p {
-    font-size: 1rem;
+
+@media (min-width: 768px) {
+  .hot-deals-banner {
+    font-size: 1.3rem;
+    padding: 5px;
   }
 }
-@media (max-width: 576px) {
-  .hot-deals-banner p {
-    font-size: 0.9rem;
+
+@media (min-width: 1200px) {
+  .hot-deals-banner {
+    font-size: 1.6rem;
+    padding: 5px;
   }
 }
-/**/
+
+/* Main Carousel */
 #mainCarousel .carousel-item img {
   max-height: 800px;
   object-fit: cover;
 }
-/**/ /* Section Header */
+
+/* Section Header */
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -155,15 +164,16 @@
   text-align: center;
 }
 
-/**/
-/* Hover effect still applies */
+/* Product Hover */
 .product-card:hover + .product-info {
   background-color: #5a6467;
   justify-content: center;
+  cursor: pointer;
 }
 
 .product-card:hover + .product-info span {
   opacity: 0;
+  cursor: pointer;
 }
 
 .product-card:hover + .product-info::after {
@@ -216,12 +226,12 @@
   transition: background-color 0.3s ease;
 }
 
-/**/
+/* Materials */
 .material-wrapper {
-  position: relative; /* keeps label positioning correct */
+  position: relative;
   display: inline-block;
   width: 100%;
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .material-card {
@@ -253,12 +263,15 @@
   font-size: 14px;
   padding: 6px 0;
   border-radius: 0 0 20px 20px;
-  background: transparent; /* keep background same as before */
+  background: transparent;
 }
-/**/
+
+/* Utilities */
 .pt-10 {
   padding-top: 6rem !important;
 }
+
+/* Contact Button */
 .btn-contact {
   background-color: #f3f0ed;
   color: #333;
@@ -275,7 +288,7 @@
   background-color: #e2dcd8;
 }
 
-/**/
+/* Search Banner */
 .search-banner {
   background-color: #525b60;
   color: white;
@@ -294,12 +307,12 @@
 }
 
 .search-input-1 {
- border-radius: 25px;
-    border: none;
-    outline: none;
-    font-size: 14px;
-    width: 30%;
-	padding-left: 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 30%;
+  padding-left: 15px;
 }
 
 .popular-tags {
@@ -324,12 +337,14 @@
   background-color: white;
   color: #525b60;
 }
+
 .search-button {
   background-color: #17a2b8;
   padding: 6px 10px;
   border-radius: 25px;
 }
-/**/
+
+/* Brand Slider */
 .brand-slider-section {
   background-color: #fff;
   padding: 30px 0;
@@ -349,23 +364,23 @@
 .brand-track img {
   height: 50px;
   object-fit: contain;
-  padding: 0 25px; /* Space between logos */
+  padding: 0 25px;
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
-/**/
+/* Subscribe Section */
 .subscribe-section {
-  background-color: #b3997a; /* Beige-like color */
+  background-color: #b3997a;
   color: white;
   padding: 30px 0;
+}
+
+.subscribe-right a {
+  color: white;
 }
 
 .subscribe-left h2 {
@@ -410,12 +425,23 @@
 
 .subscribe-right {
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
-.subscribe-right a {
-  color: white;
-  text-decoration: underline;
+.subscribe-right .subscribe-btn {
+  background: #fff;
+  color: #a89680;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.subscribe-right .subscribe-btn:hover {
+  background: #ddd;
 }
 
 @media (max-width: 768px) {
@@ -429,7 +455,8 @@
     margin: 0 auto;
   }
 }
-/**/
+
+/* Footer */
 .main-footer {
   background-color: #ffffff;
   color: #333;
@@ -462,6 +489,7 @@
   max-height: 30px;
   margin-right: 10px;
 }
+
 .contact-section {
   font-size: 14px;
 }
@@ -509,7 +537,7 @@
 }
 
 .footer-bottom {
-  background-color: #4b5457; /* dark grey */
+  background-color: #4b5457;
   text-align: center;
   padding: 10px 0;
   font-size: 13px;
@@ -532,6 +560,7 @@
     margin: 0 auto;
   }
 }
+
 .footer-links ul {
   list-style: none;
   padding: 0;
