@@ -578,13 +578,21 @@ html {
 .carousel-control-prev {
 	left: -10em;
 	color:black;
-}.carousel-control-prev:hover {
+}
+.carousel-control-prev:hover {
+	color:black;
+}
+.carousel-control-prev:focus {
 	color:black;
 }
 .carousel-control-next {
 	right: -10em;
 	color:black;
-}.carousel-control-next:hover {
+}
+.carousel-control-next:hover {
+	color:black;
+}
+.carousel-control-next:focus {
 	color:black;
 }
 /* Utilities */
