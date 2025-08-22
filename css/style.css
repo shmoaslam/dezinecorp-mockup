@@ -575,7 +575,26 @@ html {
   border-radius: 0 0 20px 20px;
   background: transparent;
 }
-
+.carousel-control-prev {
+	left: -10em;
+	color:black;
+}
+.carousel-control-prev:hover {
+	color:black;
+}
+.carousel-control-prev:focus {
+	color:black;
+}
+.carousel-control-next {
+	right: -10em;
+	color:black;
+}
+.carousel-control-next:hover {
+	color:black;
+}
+.carousel-control-next:focus {
+	color:black;
+}
 /* Utilities */
 .pt-10 {
   padding-top: 6rem !important;
