@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- body code goes here -->
-    <header class="pb-4 pt-4">
+    <header class="pb-2 pt-4">
       <div class="container">
         <div class="row align-items-center h-100">
           <!-- Left Column - Logo -->
@@ -96,10 +96,47 @@
                 <!-- Navigation Links -->
                 <div class="collapse navbar-collapse" id="mainNavbar">
                   <ul class="navbar-nav text-center mx-auto">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link active dropdown-toggle"
+                        href="#"
+                        id="productsDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
                         PRODUCTS <span class="nav-indicator"></span>
                       </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="productsDropdown"
+                      >
+                        <li class="dropdown-submenu">
+                          <a class="dropdown-item dropdown-toggle" href="#"
+                            >Drinkware</a
+                          >
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#">Glassware</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Ceramics</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Metal</a></li>
+                            <li>
+                              <a class="dropdown-item" href="#">Plastic</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Coolers</a></li>
+                        <li><a class="dropdown-item" href="#">Leather</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Winter Collection</a
+                          >
+                        </li>
+                      </ul>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">
@@ -122,9 +159,45 @@
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">
+                      <a
+                        class="nav-link active dropdown-toggle"
+                        href="#"
+                        id="saleToolsDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
                         SALES TOOLS <span class="nav-indicator"></span>
                       </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="saleToolsDropdown"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="/Common/AboutUs"
+                            >About Dezinecorp</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/contactus"
+                            >Contact Us</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Common/Contact"
+                            >Corporate Contact</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/brands"
+                            >Partner Brands</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="/Common/FAQ">FAQ</a>
+                        </li>
+                      </ul>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">
@@ -741,5 +814,19 @@
     <script src="js/bootstrap-4.4.1.js"></script>
     <!-- Swiper JS (Put before </body>) -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Add before </body> in index.html -->
+    <script>
+      // Enable hover for dropdowns
+      $("ul.navbar-nav .dropdown").hover(
+        function () {
+          $(this).addClass("show");
+          $(this).find(".dropdown-menu").addClass("show");
+        },
+        function () {
+          $(this).removeClass("show");
+          $(this).find(".dropdown-menu").removeClass("show");
+        }
+      );
+    </script>
   </body>
 </html>

@@ -914,6 +914,34 @@ html {
   font-size: 12px;
 }
 
+.custom-menu a {
+  font-size: 12px !important;
+}
+
 .footer-links ul li a:hover {
   color: #555;
+}
+/* Multi-level dropdown styles */
+.navbar-nav .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  margin-top: 0;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: 0.1rem;
+  display: none;
+  position: absolute;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
 }
