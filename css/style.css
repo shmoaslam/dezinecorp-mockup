@@ -7,6 +7,9 @@
   padding: 0 15px;
   width: 100%;
 }
+body {
+  overflow-x: hidden;
+}
 
 /* Logo Styles */
 .logo-container {
@@ -576,24 +579,24 @@ html {
   background: transparent;
 }
 .carousel-control-prev {
-	left: -10em;
-	color:black;
+  left: -10em;
+  color: black;
 }
 .carousel-control-prev:hover {
-	color:black;
+  color: black;
 }
 .carousel-control-prev:focus {
-	color:black;
+  color: black;
 }
 .carousel-control-next {
-	right: -10em;
-	color:black;
+  right: -10em;
+  color: black;
 }
 .carousel-control-next:hover {
-	color:black;
+  color: black;
 }
 .carousel-control-next:focus {
-	color:black;
+  color: black;
 }
 /* Utilities */
 .pt-10 {
