@@ -1,6 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
 /* Container with 1170px max width */
+
+/*IvyMode*/
+@font-face {
+  font-family: 'ivy-mode-semi-bold';
+  src: url("../font/ivy-mode-semi-bold.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .container-custom {
   max-width: 1170px;
   margin: 0 auto;
@@ -242,8 +251,8 @@ body {
 
 .custom-menu .nav-link {
   color: #343a40;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 16px;
   letter-spacing: 0.5px;
   padding: 20px 15px !important;
   text-transform: uppercase;
@@ -308,12 +317,12 @@ body {
 /* Large screens */
 @media (min-width: 1200px) {
   .custom-menu .nav-item {
-    margin: 0 20px;
+    margin: 0 0px;
   }
 
   .custom-menu .nav-link {
     padding: 10px 20px !important;
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -459,7 +468,24 @@ html {
   max-height: 800px;
   object-fit: cover;
 }
+    /* Smooth Fade Effect */
+    .carousel-fade .carousel-item {
+      opacity: 0;
+      transition: opacity 1.2s ease-in-out;
+    }
 
+    .carousel-fade .carousel-item.active,
+    .carousel-fade .carousel-item-next.carousel-item-start,
+    .carousel-fade .carousel-item-prev.carousel-item-end {
+      opacity: 1;
+      transition: opacity 1.2s ease-in-out;
+    }
+
+    /* Prevent sliding animation */
+    .carousel-fade .active.carousel-item-start,
+    .carousel-fade .active.carousel-item-end {
+      transform: none;
+    }
 /* Section Header */
 .section-header {
   display: flex;
@@ -470,7 +496,7 @@ html {
 }
 
 .section-header h2 {
-  font-family: "Georgia", serif;
+  font-family: 'ivy-mode-semi-bold', sans-serif;
   font-weight: bold;
   color: #52595a;
   flex: 1;
@@ -482,12 +508,11 @@ html {
 .product-slider-container {
     position: relative;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1140px;
 }
 
 .product-slider {
     overflow: hidden;
-    margin: 0 50px;
 }
 
 .product-track {
@@ -527,8 +552,7 @@ html {
     justify-content: space-between;
 }
 .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
 }
 
 .product-card:hover + .product-info {
@@ -630,12 +654,6 @@ html {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.slider-arrow:hover {
-    background: #0056b3;
-    transform: translateY(-50%) scale(1.1);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
 .slider-arrow:disabled {
     opacity: 0.5;
     cursor: not-allowed;
@@ -643,16 +661,16 @@ html {
 }
 
 .slider-arrow-left {
-    left: 5px;
+    left: -70px;
 }
 
 .slider-arrow-right {
-    right: 5px;
+    right: -70px;
 }
 
 /* Slider Indicators */
 .slider-indicators {
-    margin-top: 20px;
+	visibility: hidden;
 }
 
 .indicator {
@@ -880,27 +898,32 @@ html {
 .brand-slider {
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .brand-track {
   display: flex;
-  animation: scroll 20s linear infinite;
+  width: max-content;
+  animation: scroll linear infinite;
 }
 
 .brand-track img {
   height: 50px;
   object-fit: contain;
-  padding: 0 25px;
+  flex-shrink: 0;
+  margin-right: 50px;
 }
 
+/* Keyframes dynamically updated via JS */
 @keyframes scroll {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(-50%);
+  to {
+    transform: translateX(-100%);
   }
 }
+
 
 /* Subscribe Section */
 .subscribe-section {
@@ -1108,9 +1131,11 @@ html {
   font-size: 12px;
 }
 
+/*
 .custom-menu a {
   font-size: 12px !important;
 }
+*/
 
 .footer-links ul li a:hover {
   color: #555;
