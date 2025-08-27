@@ -35,7 +35,7 @@
             </div>
           </div>
           <!-- Middle Column - Search Bar -->
-          <div class="col-lg-6 col-md-4 col-12 order-4 order-md-2 mt-3 mt-md-0">
+          <div class="col-lg-7 col-md-4 col-12 order-4 order-md-2 mt-3 mt-md-0">
             <div class="search-container">
               <div class="search-wrapper">
                 <button class="search-btn" type="button">
@@ -50,7 +50,7 @@
             </div>
           </div>
           <!-- Right Column - User Image + Currency -->
-          <div class="col-lg-3 col-md-3 col-3 order-2 order-md-3">
+          <div class="col-lg-2 col-md-3 col-3 order-2 order-md-3">
             <div
               class="header-right d-flex align-items-center justify-content-end"
             >
@@ -74,8 +74,8 @@
             </div>
           </div>
           <div class="col-lg-12 col-md-2 col-3 order-3 order-md-4">
-            <nav class="navbar navbar-expand-lg custom-menu p-0">
-              <div class="container navbar-container justify-content-center">
+            <nav class="navbar navbar-expand-lg custom-menu px-0 py-2">
+              <div class="container navbar-container justify-content-center px-0">
                 <!-- Mobile Toggle Button -->
                 <button
                   class="navbar-toggler custom-toggler d-lg-none"
@@ -92,7 +92,7 @@
                 </button>
                 <!-- Navigation Links -->
                 <div class="collapse navbar-collapse" id="mainNavbar">
-                  <ul class="navbar-nav text-center mx-auto">
+                  <ul class="navbar-nav text-center">
                     <li class="nav-item dropdown">
                       <a
                         class="nav-link active dropdown-toggle"
@@ -148,6 +148,11 @@
                     <li class="nav-item">
                       <a class="nav-link hot-deals" href="#">
                         HOT DEALS <span class="nav-indicator"></span>
+                      </a>
+                    </li>
+					  <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        DEEP INVENTORY<span class="nav-indicator"></span>
                       </a>
                     </li>
                     <li class="nav-item">
@@ -252,7 +257,7 @@
     <!-- Carousel Section -->
     <section
       id="mainCarousel"
-      class="container-fluid carousel slide mx-0 px-0"
+      class="container-fluid carousel slide mx-0 px-0 carousel-fade"
       data-ride="carousel"
     >
       <!-- Indicators -->
@@ -264,21 +269,21 @@
 
       <!-- Slides -->
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-interval="3000">
           <img
             src="image/1440x480-banner-updated-tritan_7-31-25.jpg"
             class="d-block w-100 carousel-img"
             alt="Banner 1"
           />
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-interval="3000">
           <img
             src="image/1440x480-banner-winter-collection-2025-7-31-25.jpg"
             class="d-block w-100 carousel-img"
             alt="Banner 2"
           />
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-interval="3000">
           <img
             src="image/Stanley-ProTour-Web-Banner-New_1440x480_2025.jpg"
             class="d-block w-100 carousel-img"
@@ -304,7 +309,7 @@
         </div>
       </div>
       <!--  -->
-        <div class="container my-5">
+        <div class="row my-5">
         
         <div class="product-slider-container">
             <!-- Left Arrow -->
@@ -427,13 +432,10 @@
                 <i class="fas fa-chevron-right"></i>
             </button>
         </div>
-        
-        <!-- Slider Indicators -->
-        <div class="slider-indicators text-center mt-3" id="sliderIndicators"></div>
     </div>
         
         <!-- Slider Indicators -->
-        <div class="slider-indicators text-center mt-3" id="sliderIndicators"></div>
+        <div class="slider-indicators text-center" id="sliderIndicators"></div>
 
       <!--	-->
     </div>
@@ -442,7 +444,7 @@
     <div class="container">
       <div class="py-3">
         <!-- Section Header -->
-        <div class="section-header row text-center text-md-left">
+        <div class="section-header text-center text-md-left">
           <div
             class="col-md-12 d-flex flex-column flex-md-row align-items-center justify-content-between"
           >
@@ -560,7 +562,7 @@
     <!-- Section Carousel -->
     <div class="container py-5">
       <!-- Section Header -->
-      <div class="section-header row text-center text-md-left">
+      <div class="section-header text-center text-md-left">
         <div
           class="col-md-12 d-flex flex-column flex-md-row align-items-center justify-content-between"
         >
@@ -651,68 +653,21 @@
     </section>
     <!---->
     <section class="brand-slider-section">
-      <div class="brand-slider">
-        <div class="brand-track">
-          <!-- First set -->
-          <img
-            src="image/brands/250x100_Brand Logos_Adblock.png"
-            alt="Logo 1"
-          />
-          <img
-            src="image/brands/250x100_Brand Logos_hydeport.png"
-            alt="Logo 2"
-          />
-          <img src="image/brands/250x100_Brand Logos_igloo.png" alt="Logo 3" />
-          <img
-            src="image/brands/250x100_Brand Logos_kikkerland.png"
-            alt="Logo 4"
-          />
-          <img
-            src="image/brands/250x100_Brand Logos_luigi bormioli.png"
-            alt="Logo 5"
-          />
-          <img
-            src="image/brands/250x100_Brand Logos_nachtmann.png"
-            alt="Logo 6"
-          />
-          <img src="image/brands/250x100_Brand Logos_Riedel.png" alt="Logo 7" />
-          <img
-            src="image/brands/250x100_Brand Logos_Stanley.png"
-            alt="Logo 8"
-          />
-          <img src="image/brands/250x100_Brand Logos_tritan.png" alt="Logo 9" />
+  <div class="brand-slider">
+    <div class="brand-track">
+      <img src="image/brands/250x100_Brand Logos_Adblock.png" alt="Logo 1" />
+      <img src="image/brands/250x100_Brand Logos_hydeport.png" alt="Logo 2" />
+      <img src="image/brands/250x100_Brand Logos_igloo.png" alt="Logo 3" />
+      <img src="image/brands/250x100_Brand Logos_kikkerland.png" alt="Logo 4" />
+      <img src="image/brands/250x100_Brand Logos_luigi bormioli.png" alt="Logo 5" />
+      <img src="image/brands/250x100_Brand Logos_nachtmann.png" alt="Logo 6" />
+      <img src="image/brands/250x100_Brand Logos_Riedel.png" alt="Logo 7" />
+      <img src="image/brands/250x100_Brand Logos_Stanley.png" alt="Logo 8" />
+      <img src="image/brands/250x100_Brand Logos_tritan.png" alt="Logo 9" />
+    </div>
+  </div>
+</section>
 
-          <!-- Duplicate set for smooth loop -->
-          <img
-            src="image/brands/250x100_Brand Logos_Adblock.png"
-            alt="Logo 1"
-          />
-          <img
-            src="image/brands/250x100_Brand Logos_hydeport.png"
-            alt="Logo 2"
-          />
-          <img src="image/brands/250x100_Brand Logos_igloo.png" alt="Logo 3" />
-          <img
-            src="image/brands/250x100_Brand Logos_kikkerland.png"
-            alt="Logo 4"
-          />
-          <img
-            src="image/brands/250x100_Brand Logos_luigi bormioli.png"
-            alt="Logo 5"
-          />
-          <img
-            src="image/brands/250x100_Brand Logos_nachtmann.png"
-            alt="Logo 6"
-          />
-          <img src="image/brands/250x100_Brand Logos_Riedel.png" alt="Logo 7" />
-          <img
-            src="image/brands/250x100_Brand Logos_Stanley.png"
-            alt="Logo 8"
-          />
-          <img src="image/brands/250x100_Brand Logos_tritan.png" alt="Logo 9" />
-        </div>
-      </div>
-    </section>
 
     <!---->
     <section class="subscribe-section">
@@ -847,6 +802,31 @@
 		
 		//
 		
-    </script>
+const track = document.querySelector('.brand-track');
+  const originalContent = track.innerHTML;
+
+  // Duplicate content exactly once to allow seamless looping
+  track.innerHTML += originalContent;
+
+  // Calculate full width of original logos
+  const trackWidth = track.scrollWidth / 2;
+
+  // Set animation duration based on width (speed ~100px/sec)
+  const speed = 100;
+  const duration = trackWidth / speed;
+
+  track.style.animationDuration = `${duration}s`;
+
+  // Update keyframes dynamically so it moves exactly trackWidth px
+  const styleSheet = document.createElement('style');
+  styleSheet.innerHTML = `
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-${trackWidth}px); }
+    }
+  `;
+  document.head.appendChild(styleSheet);
+</script>
+
   </body>
 </html>
