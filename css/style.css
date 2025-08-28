@@ -572,58 +572,50 @@ html {
   flex-direction: column;
   justify-content: space-between;
 }
-.product-card:hover {
-  cursor: pointer;
+.product-info {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  transition: background-color 0.3s ease;
 }
 
-.product-card:hover + .product-info {
-  background-color: #5a6467;
-  justify-content: center;
-  cursor: pointer;
+.product-info span {
+  transition: opacity 0.3s ease;
 }
 
-.product-card:hover + .product-info span {
-  opacity: 0;
-  cursor: pointer;
-}
-
-.product-card:hover + .product-info::after {
-  content: "VIEW PRODUCT";
-  color: #fff;
-  font-weight: 600;
+.product-info .view-text {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  opacity: 0; /* Hidden by default */
+  font-weight: 600;
   font-size: 14px;
-  cursor: pointer;
+  color: #fff;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Prevents blocking clicks */
 }
-.product-card:hover .product-image img {
-  transform: scale(1.05);
-}
+
+.product-card:hover + .product-info,
 .product-info:hover {
   background-color: #5a6467;
   justify-content: center;
   cursor: pointer;
 }
 
+.product-card:hover + .product-info span,
 .product-info:hover span {
   opacity: 0;
-  cursor: pointer;
 }
 
-.product-info:hover::after {
-  content: "VIEW PRODUCT";
-  color: #fff;
-  font-weight: 600;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 14px;
-  cursor: pointer;
+.product-card:hover + .product-info .view-text,
+.product-info:hover .view-text {
+  opacity: 1;
 }
 
-.product-info:hover .product-image img {
-  transform: scale(1.01);
+.product-card:hover .product-image img {
+  transform: scale(1.05);
 }
 
 .product-image {
