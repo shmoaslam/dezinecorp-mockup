@@ -308,8 +308,7 @@ body {
   background: #007d8b;
   border-radius: 5px;
   position: absolute;
-  right: 14px;
-  top: 50%;
+  right: 0px;
   transform: translateY(-50%);
 }
 .navbar-toggler-icon {
@@ -601,25 +600,25 @@ html {
 .product-info:hover {
   background-color: #5a6467;
   justify-content: center;
-	color: #ffffff;
+  color: #ffffff;
   cursor: pointer;
 }
 
 .product-card:hover + .product-info span,
 .product-info:hover span {
-  opacity: 0;cursor: pointer;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .product-card:hover + .product-info .view-text,
 .product-info:hover .view-text {
   opacity: 1;
-	cursor: pointer;
-	
+  cursor: pointer;
 }
 
 .product-card:hover .product-image img {
   transform: scale(1.05);
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .product-image {
@@ -1202,11 +1201,12 @@ html {
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
 }
-.dropdown-item:hover, .dropdown-item:focus {
-    color: #ffffff;
-    text-decoration: none;
-    background-color: rgb(207 171 148) !important;
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: rgb(207 171 148) !important;
 }
 .dropdown-menu {
-border-radius:1rem;
+  border-radius: 1rem;
 }
