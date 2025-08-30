@@ -261,39 +261,76 @@
     <section
       id="mainCarousel"
       class="container-fluid carousel slide mx-0 px-0 carousel-fade"
-      data-ride="carousel"
+      data-bs-ride="carousel"
     >
       <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#mainCarousel" data-slide-to="1"></li>
-        <li data-target="#mainCarousel" data-slide-to="2"></li>
-      </ol>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
 
       <!-- Slides -->
       <div class="carousel-inner">
-        <div class="carousel-item active" data-interval="3000">
+        <div class="carousel-item active" data-bs-interval="3000">
           <img
-            src="image/1440x480-banner-updated-tritan_7-31-25.jpg"
+            src="/Content/DezineCorpImages/main-slider/1440x480_Hot-deal-Flyer-Banner_2022.jpg"
             class="d-block w-100 carousel-img"
             alt="Banner 1"
           />
         </div>
-        <div class="carousel-item" data-interval="3000">
+        <div class="carousel-item" data-bs-interval="3000">
           <img
-            src="image/1440x480-banner-winter-collection-2025-7-31-25.jpg"
+            src="/Content/DezineCorpImages/main-slider/1440x480-banner_RIEDEL-Martini_2022.jpg"
             class="d-block w-100 carousel-img"
             alt="Banner 2"
           />
         </div>
-        <div class="carousel-item" data-interval="3000">
+        <div class="carousel-item" data-bs-interval="3000">
           <img
-            src="image/Stanley-ProTour-Web-Banner-New_1440x480_2025.jpg"
+            src="/Content/DezineCorpImages/main-slider/1440x480-banner-Double-Wall-Glass-Banner_2022.jpg"
             class="d-block w-100 carousel-img"
             alt="Banner 3"
           />
         </div>
       </div>
+
+      <!-- Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#mainCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#mainCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </section>
 
     <!-- Section Carousel -->
