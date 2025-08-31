@@ -527,7 +527,8 @@ html {
 .product-slider-container {
   position: relative;
   margin: 0 auto;
-  max-width: 1140px;
+	    padding-right: 0;
+    padding-left: 0;
 }
 
 .product-slider {
@@ -627,7 +628,7 @@ html {
 }
 
 .product-image img {
-  width: 85%;
+  width: 70%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -700,11 +701,11 @@ html {
 }
 
 .slider-arrow-left {
-  left: -70px;
+  left: -4%;
 }
 
 .slider-arrow-right {
-  right: -70px;
+  right: -4%;
 }
 
 /* Slider Indicators */
@@ -748,6 +749,12 @@ html {
     width: 35px;
     height: 35px;
   }
+	.slider-arrow-left {
+		left:0;
+	}
+	.slider-arrow-right {
+		right:0;
+	}
 }
 
 @media (max-width: 576px) {
